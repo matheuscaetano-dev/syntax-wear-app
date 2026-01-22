@@ -2,6 +2,7 @@ import Logo from '@/assets/images/Logo.png';
 import IconUser from '@/assets/images/icon-user.png';
 import IconAbout from '@/assets/images/icon-about.png';
 import IconCart from '@/assets/images/icon-cart.png';
+import { Link } from '@tanstack/react-router';
 
 export const Header = () => {
     return (
@@ -12,7 +13,10 @@ export const Header = () => {
 
                     <nav className="hidden md:block">
                         <ul className="flex gap-10">
-                            <li><a href="#">Masculino</a></li>
+                            <li><a href="#">Masculino</a>
+
+                            
+                            </li>
                             <li><a href="#">Feminino</a></li>
                             <li><a href="#">Outlet</a></li>
                         </ul>
@@ -23,6 +27,13 @@ export const Header = () => {
                             <li className="hidden md:block"><a href="#">Nossas Lojas</a></li>
                             <li className="hidden md:block"><a href="#">Sobre</a></li>
                             <li><a href="#"><img src={IconUser} alt="Ícone de login" /></a></li>
+
+                            <Link to="/sign-in">
+                                <img src={IconUser} alt="Ícone de login" />
+                            </Link>
+
+
+
                             <li><a href="#"><img src={IconAbout} alt="Ícone de sobre" /></a></li>
                             <li><a href="#"><img src={IconCart} alt="Ícone de carrinho" /></a></li>
                         </ul>
