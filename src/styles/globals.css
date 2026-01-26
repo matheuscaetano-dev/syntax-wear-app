@@ -49,7 +49,9 @@
 }
 
 body {
-    font-family: var(--font-display); 
+    font-family: var(--font-display);
+    color: #ffffff;
+    background-color: var(--color-surface); 
 }
 
 /* Esconde scrollbar no Chrome, Safari e Edge */
