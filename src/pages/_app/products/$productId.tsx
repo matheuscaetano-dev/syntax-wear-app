@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { products } from "../../../mocks/products";
-import { formatCurrency } from "../../../utils/currency-format";
+import { formatCurrency } from "../../../utils/format-currency";
 
 export const Route = createFileRoute("/_app/products/$productId")({
   component: RouteComponent,
