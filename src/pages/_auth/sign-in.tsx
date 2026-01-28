@@ -4,9 +4,13 @@ import { Logo } from "../../components/Logo";
 import GoogleIcon from "@/assets/images/google-icon.png";
 import { Separator } from "../../components/Separator";
 
-
 export const Route = createFileRoute("/_auth/sign-in")({
   component: RouteComponent,
+  head: () => ({
+    meta: [
+      { title: 'Login - SyntaxWear' }
+    ]
+  })
 });
 
 function RouteComponent() {

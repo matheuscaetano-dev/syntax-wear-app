@@ -1,11 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RegisterForm } from "../../components/RegisterForm";
 import { Logo } from "../../components/Logo";
-import GoogleIcon from "@/assets/images/google-icon.png";
 import { Separator } from "../../components/Separator";
+import GoogleIcon from "@/assets/images/google-icon.png";
 
 export const Route = createFileRoute("/_auth/sign-up")({
   component: RouteComponent,
+  head: () => ({
+    meta: [
+      { title: 'Cadastre-se - SyntaxWear' }
+    ]
+  })
 });
 
 function RouteComponent() {
